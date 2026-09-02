@@ -1,0 +1,40 @@
+{
+  "seed": 0,
+  "n_alerts": 100,
+  "hf_model": "meta-llama/Llama-3.1-8B-Instruct:novita",
+  "hf_token_set": true,
+  "options": [
+    {
+      "name": "Week 1 baseline",
+      "key": "week1",
+      "kind": "baseline",
+      "description": "Deterministic rules-only policy",
+      "backend": "rules",
+      "model_id": null
+    },
+    {
+      "name": "Always-escalate reference",
+      "key": "reference",
+      "kind": "reference",
+      "description": "Safety-only fallback baseline",
+      "backend": "rules",
+      "model_id": null
+    },
+    {
+      "name": "Reflex LangGraph",
+      "key": "reflex",
+      "kind": "graph",
+      "description": "Rules-based graph with explicit gather/assess/decide/act flow",
+      "backend": "rules",
+      "model_id": null
+    },
+    {
+      "name": "Hybrid HF LangGraph",
+      "key": "hybrid",
+      "kind": "graph",
+      "description": "HF Llama classification with graph-controlled actions",
+      "backend": "hf_api",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct:novita"
+    }
+  ]
+}

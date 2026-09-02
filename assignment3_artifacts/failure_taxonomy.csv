@@ -1,0 +1,8 @@
+category,count
+correct,76
+over_escalate,14
+missed_rollback,10
+routed_to_human_low_confidence_or_memory,0
+rollback_gated_by_interrupt,14
+human_overridden_rollback,4
+tool_timeout_after_retry,28

@@ -1,0 +1,5 @@
+option,key,kind,accuracy,cost_per_alert,tool_calls,wall_time_s
+Week 1 baseline,week1,baseline,0.68,77.15,194,0.0003927329998987261
+Always-escalate reference,reference,reference,0.41,61.25,0,0.0
+Reflex LangGraph,reflex,graph,0.82,38.65,329,0.19196693699996104
+Hybrid HF LangGraph,hybrid,graph,0.73,63.4,329,65.32132565699976

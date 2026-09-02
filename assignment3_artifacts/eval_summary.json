@@ -1,0 +1,30 @@
+{
+  "n_holdout": 100,
+  "accuracy": 0.76,
+  "accuracy_ci_95": [
+    0.6676748127670786,
+    0.8330878873454004
+  ],
+  "cost_per_alert": 36.0,
+  "tool_calls": 329,
+  "tool_calls_by_name": {
+    "read_logs": 109,
+    "error_rate": 109,
+    "deploy_history": 111
+  },
+  "p_star": 0.75,
+  "raw_ece": 0.131,
+  "post_recalibration_ece": 0.0,
+  "calibration_map": {
+    "0.8": 1.0,
+    "0.85": 1.0,
+    "0.95": 1.0
+  },
+  "harness_stress_test_stop_reasons": [
+    "iteration_cap_exceeded",
+    "wall_clock_limit_exceeded",
+    "token_budget_exceeded"
+  ],
+  "rollbacks_gated_by_interrupt": 14,
+  "human_overridden_rollbacks": 4
+}
